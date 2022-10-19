@@ -10,3 +10,5 @@ Galaxy Hub is a news aggregator  - it displays cryptocurrency news gathered from
 
 - Framer motion
 - SCSS modules
+
+All UX/UI work done by me
