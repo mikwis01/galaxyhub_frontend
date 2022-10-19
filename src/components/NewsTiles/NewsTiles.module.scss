@@ -1,0 +1,77 @@
+@import '../../styles/variables.scss';
+
+.container {
+	width: 100%;
+	min-height: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 100%;
+	min-height: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container__inner {
+	width: 80%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1.25rem;
+	align-self: center;
+	flex-wrap: wrap;
+
+	@include lg-h {
+		grid-gap: 1rem;
+	}
+
+	@include lg {
+		display: block;
+		width: 40%;
+	}
+
+	@include rwd-max-width(635) {
+		width: 60%;
+	}
+
+	@include sm {
+		width: 80%;
+	}
+}
+
+.container__inner_button_clicked {
+	padding: 2rem 0;
+	width: 80%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1.25rem;
+	align-self: center;
+	flex-wrap: wrap;
+
+	@include lg-h {
+		padding: 1.5rem 0;
+		grid-gap: 1rem;
+		flex-wrap: nowrap;
+	}
+
+	@include lg {
+		display: block;
+		width: 40%;
+	}
+
+	@include rwd-max-width(635) {
+		width: 60%;
+	}
+
+	@include sm {
+		width: 80%;
+	}
+}
+
+.container__inner button {
+	grid-column-end: 3;
+	justify-self: center;
+}

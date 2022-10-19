@@ -1,0 +1,164 @@
+@import '../../styles/variables.scss';
+
+.container {
+	background-color: $g2;
+	width: 100%;
+	height: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+
+	@include rwd-max-height(600) {
+		height: 10rem;
+	}
+}
+
+.search__container {
+	width: 30%;
+	height: 2.25rem;
+	display: flex;
+	justify-content: space-between;
+
+	@include lg {
+		width: 20rem;
+	}
+
+	@include sm {
+		width: 17.5rem;
+	}
+}
+
+.search__container__input_wrapper {
+	width: calc(100% - 4rem);
+	height: 100%;
+	position: relative;
+}
+
+.search {
+	border-radius: 15px;
+	background-color: $g3;
+	border: none;
+	width: 100%;
+	height: 100%;
+	text-indent: 35px;
+}
+
+.search::placeholder {
+	color: #e9f2ff;
+	opacity: 0.65;
+}
+
+.search_icon {
+	left: 10px;
+	position: absolute;
+	top: 27%;
+	pointer-events: none;
+}
+
+.search__container__filters__button {
+	background-color: $g3;
+	width: 3.25rem;
+	height: 100%;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.search__container__filters__button_clicked {
+	background: linear-gradient(93.3deg, #16407e -8.25%, #3e6bae 107.58%);
+}
+
+.filters__container__filters {
+	width: 30%;
+	height: 4rem;
+	background-color: $g3;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+
+	@include lg {
+		width: 20rem;
+	}
+
+	@include sm {
+		width: 17.5rem;
+	}
+}
+
+.filters__container__filters__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 90%;
+	font-size: 0.85rem;
+
+	@include sm {
+		font-size: 0.75rem;
+	}
+}
+
+.filters__container__filters__item__select {
+	width: 20%;
+}
+
+.filters__container__filters__item__select select {
+	background-color: $g2;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.filters__container__filters__item__services {
+	width: 45%;
+	position: relative;
+}
+
+.filters__container__filters__item__checkboxes {
+	height: 1.15rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.filters__container__filters__item__checkboxes input {
+	width: 30%;
+	height: 100%;
+	cursor: pointer;
+	// opacity: 0;
+}
+
+.filters__container__filters__item__checkboxesnames {
+	width: 100%;
+	height: 1.15rem;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	pointer-events: none;
+}
+
+.filters__container__filters__item__checkboxesnames_service {
+	width: 30%;
+	text-align: center;
+	height: 100%;
+	border-radius: 5px;
+	background-color: $g2;
+}
+
+.filters__container__filters__item__checkboxesnames_service_clicked {
+	width: 30%;
+	text-align: center;
+	height: 100%;
+	border-radius: 5px;
+	background-color: $g2;
+	background: linear-gradient(93.3deg, #16407e -8.25%, #3e6bae 107.58%);
+}
+
+.filters__container__filters__item > span {
+	color: $f2;
+	opacity: 0.65;
+	position: relative;
+}

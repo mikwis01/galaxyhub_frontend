@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+
+.background {
+	height: 100%;
+	width: 40%;
+	background-image: url('../../assets/hero_image.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	@include lg {
+		background-size: cover;
+	}
+
+	@include rwd-max-width(876) {
+		display: none;
+	}
+
+	// @include rwd-max-width(){
+
+	// }
+}

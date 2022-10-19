@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.btn {
+	width: 40%;
+	height: 2.25rem;
+	background: linear-gradient(93.3deg, #16407e -8.25%, #3e6bae 107.58%);
+	border: none;
+	font-weight: 700;
+	border-radius: 15px;
+	font-size: 1rem;
+	cursor: pointer;
+
+	@include lg {
+		margin-top: 1.5rem;
+		margin-left: 30%;
+	}
+}

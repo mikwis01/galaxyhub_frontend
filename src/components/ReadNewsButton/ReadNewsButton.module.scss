@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+
+.btn {
+	width: 13rem;
+	height: 3.5rem;
+	font-size: 1.25rem;
+	font-weight: 700;
+	background: linear-gradient(93.3deg, #16407e -8.25%, #3e6bae 107.58%);
+	border-radius: 15px;
+	border: 0;
+	cursor: pointer;
+
+	@include lg-h {
+		width: 11rem;
+		height: 3rem;
+		font-size: 1.1rem;
+	}
+
+	@include lg {
+		width: 9rem;
+		height: 3rem;
+		font-size: 0.9rem;
+	}
+
+	@include sm {
+		width: 7.5rem;
+		height: 2.75rem;
+		font-size: 0.8rem;
+	}
+
+	@include rwd-max-width(352) {
+		width: 6.5rem;
+		height: 2.5rem;
+		font-size: 0.7rem;
+	}
+
+	// @include rwd-max-height(600) {
+	// 	width: 7.5rem;
+	// 	height: 2.75rem;
+	// 	font-size: 0.8rem;
+	// }
+
+	@include rwd-max-height(600) {
+		width: 6.5rem;
+		height: 2.5rem;
+		font-size: 0.7rem;
+	}
+}

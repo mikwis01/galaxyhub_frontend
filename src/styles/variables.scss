@@ -1,0 +1,79 @@
+$f: #ffffff;
+$f2: #e9f2ff;
+$g: #222222;
+$g2: #282828;
+$g3: #1d1d1d;
+$bl: #3e6bae;
+$lb: #78beff;
+
+//WIDTH
+$screen-sm-max: 480px;
+$screen-md-max: 768px;
+$screen-lg-max: 1024px;
+$screen-xl-max: 1200px;
+
+//HEIGHT
+$screen-lg-max-h: 768px;
+$screen-xl-min-h: 1080px;
+
+//WIDTH
+@mixin sm {
+	@media all and (max-width: #{$screen-sm-max}) {
+		@content;
+	}
+}
+
+@mixin md {
+	@media all and (max-width: #{$screen-md-max}) {
+		@content;
+	}
+}
+
+@mixin lg {
+	@media all and (max-width: #{$screen-lg-max}) {
+		@content;
+	}
+}
+
+@mixin xl {
+	@media all and (max-width: #{$screen-xl-max}) {
+		@content;
+	}
+}
+
+@mixin rwd-max-width($screen) {
+	@media all and (max-width: #{$screen + 'px'}) {
+		@content;
+	}
+}
+
+@mixin rwd-min-width($screen) {
+	@media all and (min-width: #{$screen + 'px'}) {
+		@content;
+	}
+}
+
+//HEIGHT
+@mixin lg-h {
+	@media all and (max-height: #{$screen-lg-max-h}) {
+		@content;
+	}
+}
+
+@mixin xl-h-max {
+	@media all and (max-height: #{$screen-xl-min-h}) {
+		@content;
+	}
+}
+
+@mixin xl-h-min {
+	@media all and (min-height: #{$screen-xl-min-h}) {
+		@content;
+	}
+}
+
+@mixin rwd-max-height($screen) {
+	@media all and (max-height: #{$screen + 'px'}) {
+		@content;
+	}
+}

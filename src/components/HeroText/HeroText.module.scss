@@ -1,0 +1,120 @@
+@import '../../styles/variables.scss';
+
+.container {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	@include rwd-max-width(876) {
+		width: 80%;
+	}
+}
+
+.container__inner {
+	display: flex;
+	flex-direction: column;
+	height: 27.5rem;
+	justify-content: space-between;
+
+	@include lg-h {
+		height: 22rem;
+	}
+
+	@include xl-h-min {
+		height: 30rem;
+	}
+
+	@include rwd-max-width(876) {
+		align-items: center;
+		text-align: center;
+	}
+
+	@include rwd-max-width(540) {
+		margin-top: 5vh;
+	}
+
+	@include sm {
+		height: 19rem;
+	}
+
+	@include rwd-max-height(600) {
+		height: 19rem;
+	}
+
+	@include rwd-max-height(500) {
+		height: 15rem;
+	}
+
+	@include rwd-max-height(400) {
+		height: 12.5rem;
+	}
+}
+
+.container__inner__header {
+	font-size: 3rem;
+	font-weight: 700;
+
+	@include lg-h {
+		font-size: 2.5rem;
+	}
+
+	@include xl-h-min {
+		font-size: 3.75rem;
+	}
+
+	@include lg {
+		font-size: 2.25rem;
+	}
+
+	@include sm {
+		font-size: 2rem;
+	}
+
+	@include rwd-max-width(352) {
+		font-size: 1.75rem;
+	}
+
+	@include rwd-max-height(600) {
+		font-size: 1.75rem;
+	}
+
+	@include rwd-max-height(400) {
+		font-size: 1.5rem;
+	}
+}
+
+.container__inner__description {
+	font-size: 1.5rem;
+	font-weight: 300;
+	opacity: 0.75;
+
+	@include lg-h {
+		font-size: 1.25rem;
+	}
+
+	@include xl-h-min {
+		font-size: 1.75rem;
+	}
+
+	@include lg {
+		font-size: 1.15rem;
+	}
+
+	@include sm {
+		font-size: 1rem;
+	}
+
+	@include rwd-max-width(352) {
+		font-size: 0.9rem;
+	}
+
+	@include rwd-max-height(600) {
+		font-size: 0.9rem;
+	}
+}
+
+.container__buttons a:nth-child(2) {
+	margin-left: 1.5rem;
+}

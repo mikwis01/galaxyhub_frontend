@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+
+.navigation {
+	width: 80%;
+	height: 10vh;
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+
+	@include rwd-max-width(540) {
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: 15vh;
+	}
+
+	@include rwd-max-height(600) {
+		height: 5rem;
+	}
+}
+
+.links {
+	width: 12.5rem;
+}
+
+.links > ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+}
+
+.links > ul > li {
+	font-size: 1rem;
+}
